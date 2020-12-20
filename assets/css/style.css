@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Quicksand:wght@400;600;700&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+    font-size: 15px;
+    color: #848484;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#section-category{
+    padding: 114px 0px 120px 0px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container .section-title h5{
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    color: #f85c70;
+}
+
+.container .section-title h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 900;
+    margin-bottom: 21px;
+    font-family: 'Nunito', sans-serif;
+    color: #061a3a;
+}
+
+.container .section-title p{
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.container .items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .items .item{
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.container .items .item .inner-box{
+    position: relative;
+    max-width: 210px;
+    width: 100%;
+    margin: 0 auto;
+    background:#fff;
+    padding: 35px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 50px 0px #e4e7ee;
+    transition: all 500ms ease;
+    text-align: center;
+    z-index: 1;
+}
+.container .items .item .inner-box::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    transition: all 500ms ease;
+    background-color: #f85c70;
+    z-index: -1;
+}
+.container .items .item .inner-box:hover::before{
+    height: 100%;
+}
+.container .items .item .inner-box .shape .shape-1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 61px;
+    height: 77px;
+    background-image: url(../img/shape-1.png);
+    background-repeat: no-repeat;
+}
+
+.shape-2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 35px;
+    height: 61px;
+    background-image: url(../img/shape-2.png);
+    background-repeat: no-repeat;
+}
+
+.container .items .item .inner-box .icon-box{
+    font-size: 50px;
+    line-height: 50px;
+    color: #93959e;
+    margin-bottom: 11px;
+    transition: all 500ms ease;
+    
+}
+.container .items .item .inner-box:hover .icon-box{
+    color: #fff;
+}
+
+.container .items .item .inner-box:hover{
+    box-shadow: 0px 10px 50px 0px rgb(248 92 112 / 30%);
+}
+
+.container .items .item .inner-box h4{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: #061a3a;
+    transition: all .5s;
+}
+.container .items .item .inner-box:hover h4{
+    color: #fff;
+}
+.container .items .item .inner-box span{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #93959e;
+    background: #f2f2f5;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.container .items .item .inner-box:hover span{
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.all-category-btn{
+    text-align: center;
+}
+.all-category-btn .category-btn{
+    position: relative;
+    padding: 17px 48px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #fff !important;
+    text-align: center;
+    padding: 12px 29px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px 0px rgba(248,92,112,0.4);
+    z-index: 1;
+    transition: all .5s;
+    background-color: #f85c70;
+}
+.all-category-btn .category-btn:hover{
+    background: #0d1927;
+}
+.all-category-btn .category-btn::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: #0d1927;
+    border-radius: 30px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transition: all .5s;
+}
+.all-category-btn .category-btn:hover::before{
+    width: 100%;
+}
